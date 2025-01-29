@@ -7,3 +7,5 @@ The primary focus of this challenge is to demonstrate your ability to consume an
 
 API endpoint:
 https://jsonplaceholder.typicode.com/posts
+
+<img width="335" alt="image" src="https://github.com/user-attachments/assets/449fd81d-c3c3-4492-a8dd-7cbb581a91a9" />
