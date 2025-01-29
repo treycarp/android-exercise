@@ -1,2 +1,2 @@
 # android-exercise
-Navigate to each app folder for exercise instructions and solutions
+Navigate to each branch for exercise instructions and solutions
