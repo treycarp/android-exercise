@@ -1,6 +1,9 @@
 package com.method.android_exercise
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
+import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
@@ -28,7 +31,7 @@ fun MainScreen() {
         topBar = { TopBar() },
         bottomBar = { BottomNavigationBar(navController) },
         content = { padding ->
-            Box(modifier = Modifier.padding(padding)) {
+            Box (modifier = Modifier.padding(padding)) {
                 Navigation(navController = navController)
             }
         },
@@ -52,6 +55,7 @@ fun BottomNavigationBar(navController: NavController) {
         NavigationItem.WeatherScreen
     )
     BottomNavigation(
+        modifier = Modifier.padding(WindowInsets.navigationBars.asPaddingValues()),
         backgroundColor = colorResource(id = R.color.white),
         contentColor = Color.White
     ) {
