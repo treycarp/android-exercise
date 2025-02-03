@@ -16,7 +16,9 @@ import com.method.android_exercise.ui.NavigationItem
 import com.method.android_exercise.ui.screens.RandomNumberScreen
 import com.method.android_exercise.ui.screens.WeatherScreen
 import com.method.android_exercise.ui.theme.AndroidexerciseTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
