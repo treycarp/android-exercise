@@ -65,6 +65,8 @@ dependencies {
     implementation libs.androidx.hilt.navigation.fragment
     implementation libs.androidx.hilt.navigation.compose
     implementation("com.google.dagger:hilt-android:2.44")
+    implementation libs.androidx.junit.ktx
+    testImplementation libs.androidx.runner
     kapt("com.google.dagger:hilt-android-compiler:2.44")
     implementation("androidx.hilt:hilt-work:1.0.0")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
@@ -78,4 +80,16 @@ dependencies {
     androidTestImplementation libs.androidx.ui.test.junit4
     debugImplementation libs.androidx.ui.tooling
     debugImplementation libs.androidx.ui.test.manifest
+
+    testImplementation("io.mockk:mockk:1.13.16")
+    testImplementation "com.google.truth:truth:1.4.4"
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.mockito:mockito-core:3.4.6'
+
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    androidTestImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    testImplementation("org.robolectric:robolectric:4.13")
+
+    testImplementation 'androidx.test:core:1.6.1'
 }
